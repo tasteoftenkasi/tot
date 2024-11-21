@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taste of Tenkasi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Taste of Tenkasi</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#contact">Contact </a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="hero">
+            <img src="hero-image.jpg" alt="">
+            <div class="hero-text">
+                <h2>Welcome to Taste of Tenkasi</h2>
+                <p>Experience the authentic and delicious food from Tenkasi</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu">
+        <div class="container">
+            <h2 style="color: #FFD700;"></h2>
+            <div class="menu-buttons">
+                <button onclick="showCategory('non-veg')">Non-Vegetarian</button>
+                <button onclick="showCategory('veg')">Vegetarian</button>
+                <button onclick="showCategory('starters')">Starters/Sweets</button>
+                <button onclick="showCategory('breakfast-dinner')">Breakfast/Dinner</button>
+                
+            </div>
+            <div id="non-veg" class="menu-category" style="display: none;">
+                <h3>Non-Vegetarian</h3>
+                <div class="dish-images">
+                    <img src="images/CB.jpg" alt="Chicken Biriyani">
+                    <img src="images/CFR.jpg" alt="Chicken Fried Rice">
+                    <img src="images/fish.jpg" alt="Chicken Noodles">
+                    <img src="images/CG.jpg" alt="Chicken Gravy">
+                </div>
+                <h4 style="color: #ffffff;">Chicken Dishes</h4>
+                <ul>
+                    <li>Chicken Biriyani (Full Tray) </li>
+                    <li>Chicken Biriyani (1/2 Tray) </li>
+                    <li>Chicken Fried Rice (Full Tray) </li>
+                    <li>Chicken Fried Rice (1/2 Tray) </li>
+                    <li>Chicken Noodles (Full Tray) </li>
+                    <li>Chicken Noodles (1/2 Tray) </li>
+                    <li>Chicken Gravy (Full Tray) </li>
+                    <li>Chicken Gravy (1/2 Tray) </li>
+                    <li>Chicken Pepper Fry (Full Tray) </li>
+                    <li>Chicken Pepper Fry (1/2 Tray) </li>
+                    <li>Chicken Salna (Full Tray) </li>
+                    <li>Chicken Salna (1/2 Tray) </li>
+                    <li>Chicken 65 (Full Tray) </li>
+                    <li>Chicken 65 (1/2 Tray) </li>
+                    <li>Butter Chilli Chicken (1/2 Tray) </li>
+                </ul>
+                <h4 style="color: #ffffff;">Mutton Dishes</h4>
+                <ul>
+                    <li>Mutton Biriyani (Full Tray) </li>
+                    <li>Mutton Biriyani (1/2 Tray) </li>
+                    <li>Mutton Gravy (Full Tray) </li>
+                    <li>Mutton Gravy (1/2 Tray) </li>
+                </ul>
+                <h4 style="color: #ffffff;">Fish</h4>
+                <ul>
+                    <li>Fish Kulambu (Full Tray) </li>
+                    <li>Fish Kulambu (1/2 Tray) </li>
+                </ul>
+                <h4 style="color: #ffffff;">Other</h4>
+                <ul>
+                    <li>Egg Curry (1/2 Tray) </li>
+                </ul>
+            </div>
+            <div id="veg" class="menu-category" style="display: none;">
+                <h3>Vegetarian</h3>
+                <div class="dish-images">
+                    <img src="images/veg1.jpg" alt="Vegetable Biriyani">
+                    <img src="images/veg2.jpg" alt="Vegetable Fried Rice">
+                    <img src="images/veg3.jpg" alt="Vegetable Noodles">
+                    <img src="images/veg4.jpg" alt="Sambar Rice">
+                </div>
+                <h4 style="color: #ffffff;">Rice-Dishes</h4>
+                <ul>
+                    <li>Vegetable/Soya Chunks/Mushroom/Channa Biriyani Types (Full Tray) </li>
+                    <li>Vegetable/Soya Chunks/Mushroom/Channa Biriyani Types (1/2 Tray) </li>
+                    <li>Vegetable Fried Rice (Full Tray) </li>
+                    <li>Vegetable Fried Rice (1/2 Tray) </li>
+                    <li>Vegetable Noodles (Full Tray) </li>
+                    <li>Vegetable Noodles (1/2 Tray) </li>
+                    <li>Sambar Rice (Full Tray) </li>
+                    <li>Sambar Rice (1/2 Tray) </li>
+                    <li>Lemon/Tamarind/Tomato/Curd/Mint Rice Types (Full Tray) </li>
+                    <li>Lemon/Tamarind/Tomato/Curd/Mint Rice Types (1/2 Tray) </li>
+                </ul>
+                <h4 style="color: #ffffff;">Curries and Gravies</h4>
+                <ul>
+                    <li>Veg Kurma/Salna (Full Tray) </li>
+                    <li>Veg Kurma/Salna (1/2 Tray) </li>
+                    <li>Mushroom Gravy (1/2 Tray) </li>
+                    <li>Paneer Butter Masala (1/2 Tray) </li>
+                    <li>Butter Chilli Paneer (1/2 Tray) </li>
+                    <li>Vatha Kulambu/Paruppu Urundai Kulambu (Full Tray) </li>
+                    <li>Vatha Kulambu/Paruppu Urundai Kulambu (1/2 Tray) </li>
+                </ul>
+                <h4 style="color: #ffffff;">Sides and Others</h4>
+                <ul>
+                    <li>Rasam (Full Tray) </li>
+                    <li>Rasam (1/2 Tray) </li>
+                    <li>Sambar (Full Tray) </li>
+                    <li>Sambar (1/2 Tray) </li>
+                    <li>Channa/Red Beans Gravy (Full Tray) </li>
+                    <li>Channa/Red Beans Gravy (1/2 Tray) </li>
+                    <li>Dhal Fry (1/2 Tray) </li>
+                    <li>Butter Milk Kulambu with Okra (1/2 Tray) </li>
+                    <li>Potato Fry (1/2 Tray) </li>
+                    <li>Beetroot/Cabbage/Carrot Poriyal (1/2 Tray) </li>
+                    <li>Surakai Kootu/Bottle Gourd Curry (1/2 Tray) </li>
+                    <li>Oil Brinjal Curry (1/2 Tray) </li>
+                </ul>
+            </div>
+            <div id="starters" class="menu-category" style="display: none;">
+                <h3>Starters / Sweets</h3>
+                <div class="dish-images">
+                    <img src="images/starters1.jpg" alt="Medhu Vada">
+                    <img src="images/starters2.jpg" alt="Veg Pakoda">
+                    <img src="images/starters3.jpg" alt="Kuzhi Paniyaram">
+                    <img src="images/starters4.jpg" alt="Gulab Jamun">
+                </div>
+                <ul>
+                    <li>Medhu Vada/Masala Vada/Potato Bonda (30 Nos) + Chutney </li>
+                    <li>Veg Pakoda (Full Tray) </li>
+                    <li>Veg Pakoda (1/2 Tray) </li>
+                    <li>Kuzhi Paniyaram (30 Nos) (1/2 Tray) </li>
+                    <li>Gulab Jamun (30 Nos) </li>
+                    <li>Rasamalai (30 Nos) </li>
+                    <li>Moong Dhal Halwa (1/2 Tray) </li>
+                    <li>Rava/Semiya Kesari (1/2 Tray) </li>
+                </ul>
+            </div>
+            <div id="breakfast-dinner" class="menu-category" style="display: none;">
+                <h3>Breakfast / Dinner</h3>
+                <div class="dish-images">
+                    <img src="images/breakfast1.jpg" alt="Idly">
+                    <img src="images/breakfast2.jpg" alt="Uthappam">
+                    <img src="images/breakfast3.jpg" alt="Poori">
+                    <img src="images/breakfast4.jpg" alt="Aappam">
+                </div>
+                <ul>
+                    <li>Idly (25 Nos) + Sambar + Chutney </li>
+                    <li>Uthappam (25 Nos) + Sambar + Chutney </li>
+                    <li>Poori (25 Nos) + Potato Masala OR Channa Gravy </li>
+                    <li>Aappam (25 Nos) + Kadala Curry (Black Channa) </li>
+                    <li>Pongal (1/2 Tray) + Sambar + Chutney </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Please call or Whatsapp for the prices</h2>
+            <div class="contact-info">
+                <p><strong>Name:</strong> RAMA</p>
+                <p><strong>Phone:</strong> 8566503124</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Taste of Tenkasi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function showCategory(categoryId) {
+            // Hide all menu categories
+            const categories = document.querySelectorAll('.menu-category');
+            categories.forEach(category => category.style.display = 'none');
+
+            // Show the selected category
+            document.getElementById(categoryId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
+
